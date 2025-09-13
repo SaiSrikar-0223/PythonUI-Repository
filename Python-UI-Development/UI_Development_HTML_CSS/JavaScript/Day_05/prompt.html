@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Is prompt() return anything? </title>
+        <script>
+            function createClick(){
+                f = prompt("Enter folder name:");
+
+                if(f == null){
+                    document.write("Process of folder creation has cancelled.");
+                }
+                else if(f == "")
+                {
+                    document.write("Please Enter valid folder name.");
+                }
+                else{
+                    document.querySelector("p").innerHTML += "Folder Created :" + f + "<br>";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="createClick()"> Create Folder </button>
+        <p></p>
+    </body>
+</html>

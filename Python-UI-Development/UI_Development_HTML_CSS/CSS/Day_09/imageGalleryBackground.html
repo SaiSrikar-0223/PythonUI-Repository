@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Image Gallery </title>
+        <style>
+            body{
+                background-image: url("Spring\ boot.jpg");
+                background-repeat: no-repeat;
+                background-size: 50% 50%;
+                background-position: center bottom;
+            }
+            .photo-gallery{
+                width: 95%;
+                border: 1px solid blue;
+                margin: auto;
+                margin-top: 100px;
+                padding: 10px;
+                height: 400px;
+            }
+            .photo{
+                float: left;
+                margin: 10px;
+                cursor: pointer;
+
+            }
+            .photo img{
+                border: 2px ridge red;
+                transition: transform 0.5s;
+            }
+            .photo div{
+                text-align: center;
+            }
+            .photo img:hover{
+                transform: scale(-1.1);
+                /* transform: rotate(180deg); */
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "photo-gallery">
+            <div class = "photo">
+                <img src = "Java Fullstack.jpg" height="200" width="200">
+                <div> Java Fullstack </div>
+            </div>
+            <div class = "photo">
+                <img src = "Software Testing.jpg" height="200" width="200">
+                <div> Software Testing </div>
+            </div>
+            <div class = "photo">
+                <img src = "Spring boot.jpg" height="200" width="200">
+                <div> Springboot Microservices </div>
+            </div>
+        </div>
+    </body>
+</html>

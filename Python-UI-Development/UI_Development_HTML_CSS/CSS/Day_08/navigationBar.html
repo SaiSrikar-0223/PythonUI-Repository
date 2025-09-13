@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home Page </title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #navbar{
+                /* background-color: lightcyan; */
+                height: 70px;
+            }
+            #navbar .navbar-brand{
+                float: left;
+                background-color: blueviolet;
+                width: 20%;
+                padding-top: 10px;
+                padding-left: 50px;
+                padding-bottom: 10px;
+            }
+            #navbar .nav{
+                float: left;
+                background-color: red;
+                width: 80%;
+            }
+            #navbar .nav ul{
+                list-style-type: none;
+                padding-bottom: 10px;
+            }
+            #navbar .nav ul li{
+                float: left;
+                padding-left: 20px;
+                padding-right: 30px;
+
+            }
+            #navbar .nav ul li a:link{
+                text-decoration: none;
+                color: white;
+            }
+            #navbar .nav ul li a:hover{
+                background-color: white;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> My Tour Package </h1>
+        <div id = "navbar">
+            <div class = "navbar-brand"> My Travel Page </div>
+            <div class = "nav">
+                <ul>
+                    <li> <a href="#"> Home </a></li>
+                    <li> <a href = "#"> Packages </a> </li>
+                    <li> <a href="#"> Climate </a></li>
+                    <li> <a href = "#"> Contact </a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

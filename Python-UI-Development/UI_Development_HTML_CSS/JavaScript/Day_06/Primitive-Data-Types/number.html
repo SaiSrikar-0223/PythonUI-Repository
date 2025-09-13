@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        var a;
+
+        a = 123;    // decimal
+        console.log(typeof a);
+
+        // binary ==> base 2 value ==> two literals: 1 and 0
+        // prefix : 0b/0B
+
+        a = 0b110011; // binary
+        console.log(typeof a);
+
+        // octal ==> base-8 number ==> literals: 0 to 7
+        a = 0O7654321; // octal
+        console.log(typeof a);
+
+        // hexadecimal ==> base16 number ==> literals: 0 to 9 and a to f or A to F
+        // prefix : 0x / 0X
+
+        a = 0X12fa;
+        console.log(typeof a);
+
+        a = 1.234; // floating
+        console.log(typeof a);
+
+        a = 1.2e-5; // scientific data 
+        console.log(typeof a);
+    </script>
+</body>
+</html>

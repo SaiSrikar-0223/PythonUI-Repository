@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Output Techniques </title>
+        <script>
+            function DeleteData()
+            {
+                if(confirm("Are you sure want to delete the data?") == true)
+                {
+                    // alert("The Data which was selected was deleted successfully.");
+                    // document.getElementById("text").innerText = "The Data which was selected was deleted successfully.";
+                    // document.querySelector("h2").innerText = "The Data which was selected was deleted successfully.";
+                    // document.querySelector("#text").innerText = "<p> The Data which was selected was deleted successfully. </p>";
+                    // document.querySelector("#text").innerHTML = "<p> The Data which was selected was deleted successfully. </p>";
+                    document.querySelector("#text").outerHTML = "<p> The Data which was selected was deleted successfully. </p>";
+                }
+                else{
+                    alert("The Delete Process was cancelled by Interrupt.");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Output Methods </h1>
+        <button onclick="DeleteData()"> Delete </button>
+        <h2 id = "text"></h2>
+    </body>
+</html>

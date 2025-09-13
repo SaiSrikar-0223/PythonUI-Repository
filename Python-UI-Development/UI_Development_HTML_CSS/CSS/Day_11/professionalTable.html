@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Professional Table </title>
+        <style>
+            .table{
+                width: 100%;
+                /* background-color: tomato; */
+                cursor: pointer;
+                border-collapse: collapse;
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
+            .table-container{
+                width: 95%;
+                margin:auto;
+            }
+            .table td{
+                border: 1px solid blue;
+                padding: 8px;
+                text-align: center;
+            }
+            .table th{
+                border: 1px solid red;
+                padding: 12px 10px;
+                /* text-align: left; */
+                background-color: rgba(128, 128, 128, 0.354);
+                /* color: white; */
+            }
+            .table tr:nth-child(even){
+                background-color: rgba(173, 216, 230, 0.386);
+            }
+            .table tr:nth-child(odd){
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> States- Capital and Language </h1>
+        <div class = "table-container">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th> S.No. </th>
+                        <th> State Name </th>
+                        <th> Capital Name </th>
+                        <th> Language </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1. </td>
+                        <td> Andhra Pradesh </td>
+                        <td> Amaravathi </td>
+                        <td> Telugu </td>
+                    </tr>
+                    <tr>
+                        <td> 2. </td>
+                        <td> Telangana </td>
+                        <td> Hyderabad </td>
+                        <td> Telugu </td>
+                    </tr>
+                    <tr> 
+                        <td> 3. </td>
+                        <td> Arunachal Pradesh </td>
+                        <td> Itanagar </td>
+                        <td> English </td>
+                    </tr>
+                    <tr>
+                        <td> 4. </td>
+                        <td> Kerala </td>
+                        <td> Thiruvanthapuram </td>
+                        <td> Malayalam </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
